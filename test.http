@@ -1,0 +1,50 @@
+
+POST https://yqdszsjs.people.cn//question/answer HTTP/1.1
+Date : Wed, 07 Jul 2021 06:50:02 GMT
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2MjdjOTgzNS1lZjc1LTRkYmUtODZjNy1iMWFkMjE5NjczNjciLCJDUkVBVEVEIjoxNjI1NTMyMzQ3NjI0LCJleHAiOjE2MjcwMDM1NzZ9.oj5tBMNWNBOOMsdPjjH23C2T_1MjIHc7g2vVdNXGuqbVcDtTN952NUXfM0Tjb1g-VZ7nUtJQEmGv1GnYasz0Qw
+Content-Type : application/json;charset=UTF-8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat
+Transfer-Encoding : chunked
+Access-Control-Allow-Origin :*
+Access-Control-Allow-Credentials :true
+Access-Control-Allow-Methods :*
+Access-Control-Allow-Headers :*
+Access-Control-Expose-Headers :*
+Referer: https://servicewechat.com/wxd1038c1088b41c74/7/page-frame.html
+Vary :Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Server :elb
+
+{"questionId":4356,"option":"2","plate":5,"sumContribution":1378}
+---
+
+curl 'https://yqdszsjs.people.cn//question/answer' 
+-X POST 
+-H 'Host: yqdszsjs.people.cn' 
+-H 'Connection: keep-alive' 
+-H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2MjdjOTgzNS1lZjc1LTRkYmUtODZjNy1iMWFkMjE5NjczNjciLCJDUkVBVEVEIjoxNjI1NTMyMzQ3NjI0LCJleHAiOjE2MjcwMDM1NzZ9.oj5tBMNWNBOOMsdPjjH23C2T_1MjIHc7g2vVdNXGuqbVcDtTN952NUXfM0Tjb1g-VZ7nUtJQEmGv1GnYasz0Qw' 
+-H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat'
+ -H 'content-type: application/json' 
+ -H 'Referer: https://servicewechat.com/wxd1038c1088b41c74/7/page-frame.html' 
+ -H 'Accept-Encoding: gzip, deflate, br' -
+d '{"questionId":4356,"option":"2","plate":5,"sumContribution":36}' --compressed
+
+
+curl 'https://yqdszsjs.people.cn/question/questionList?plate=5' 
+-H 'Host: yqdszsjs.people.cn' 
+-H 'Connection: keep-alive' 
+-H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2MjdjOTgzNS1lZjc1LTRkYmUtODZjNy1iMWFkMjE5NjczNjciLCJDUkVBVEVEIjoxNjI1NTMyMzQ3NjI0LCJleHAiOjE2MjcwMDM1NzZ9.oj5tBMNWNBOOMsdPjjH23C2T_1MjIHc7g2vVdNXGuqbVcDtTN952NUXfM0Tjb1g-VZ7nUtJQEmGv1GnYasz0Qw' 
+-H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat' -H 'content-type: application/json' 
+-H 'Referer: https://servicewechat.com/wxd1038c1088b41c74/7/page-frame.html' 
+-H 'Accept-Encoding: gzip, deflate, br'  
+&& 
+curl 'https://yqdszsjs.people.cn//question/answer' 
+-X POST 
+-H 'Host: yqdszsjs.people.cn' 
+-H 'Connection: keep-alive' 
+-H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2MjdjOTgzNS1lZjc1LTRkYmUtODZjNy1iMWFkMjE5NjczNjciLCJDUkVBVEVEIjoxNjI1NTMyMzQ3NjI0LCJleHAiOjE2MjcwMDM1NzZ9.oj5tBMNWNBOOMsdPjjH23C2T_1MjIHc7g2vVdNXGuqbVcDtTN952NUXfM0Tjb1g-VZ7nUtJQEmGv1GnYasz0Qw' 
+-H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat'
+ -H 'content-type: application/json' 
+ -H 'Referer: https://servicewechat.com/wxd1038c1088b41c74/7/page-frame.html' 
+ -H 'Accept-Encoding: gzip, deflate, br' 
+ 
+ -d '{"questionId":4861,"option":"2","plate":5,"sumContribution":0}'  
