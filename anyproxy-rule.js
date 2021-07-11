@@ -13,5 +13,19 @@ function isPromise(obj) {
 module.exports = {
     *beforeSendResponse(requestDetail, responseDetail) {
         return hackserver.beforeSendResponse(requestDetail, responseDetail);
+    },
+    *beforeDealHttpsRequest(requestDetail){
+        return hackserver.beforeDealHttpsRequest(requestDetail); 
+    },
+
+    *beforeSendWsMessageToServer(messageDetail) {
+        return hackserver.beforeSendWsMessageToServer(messageDetail); 
+    },
+
+    *beforeSendWsMessageToClient(messageDetail) {
+        return hackserver.beforeSendWsMessageToClient(messageDetail); 
     }
+
+
+   
 };

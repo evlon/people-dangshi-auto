@@ -22,12 +22,12 @@ function main(args) {
       enable: true
     },
     wsIntercept: true,
-    forceProxyHttps: true,
+    forceProxyHttps: false,
     dangerouslyIgnoreUnauthorized: false,
     silent: false
   };
 
-  const ProxyServer = require('anyproxy').ProxyServer
+  const ProxyServer = require('./anyproxy/proxy').ProxyServer
 
   let proxyServer = new ProxyServer(options);
   proxyServer.on('ready', () => {
