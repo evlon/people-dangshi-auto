@@ -23,13 +23,7 @@ class HackServer {
             return true;
         }
 
-        if(requestDetail.host == "172.16.192.56:443"){
-            requestDetail.host = "websocket.dangjian.chinamobile.com:443";
-            return true;
-        }       
-        if(requestDetail.host.indexOf('dangjian.chinamobile.com') != -1){
-            return true;
-        }
+
         return false;
         
     }
@@ -81,7 +75,7 @@ class HackServer {
                 let rightOptions = dataItem.rightOption.split(',');
                 for (let j = 0, jc = rightOptions.length; j < jc; j++) {
                     let key = options[parseInt(rightOptions[j])];
-                    dataItem[key] = "[" + flags[j] + "] ";// + dataItem[key] ;//+ "[" + flags.join("]  [") + "] ";
+                    dataItem[key] = "[" + flags[j] + "] " + dataItem[key] ;//+ "[" + flags.join("]  [") + "] ";
                     //dataItem[key] = "[" + flags.join("]  [") + "] ";
                 }
             }

@@ -16,7 +16,8 @@ module.exports = {
     },
     *beforeDealHttpsRequest(requestDetail){
         return hackserver.beforeDealHttpsRequest(requestDetail); 
-    },
+    }
+    ,
 
     *beforeSendWsMessageToServer(messageDetail) {
         return hackserver.beforeSendWsMessageToServer(messageDetail); 
